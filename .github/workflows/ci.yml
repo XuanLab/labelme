@@ -60,12 +60,12 @@ jobs:
       run: |
         pip install .
 
-    - name: Lint with flake8
-      shell: bash -l {0}
-      if: matrix.os != 'windows-latest'
-      run: |
-        pip install hacking==4.1.0
-        flake8 .
+#    - name: Lint with flake8
+#      shell: bash -l {0}
+#      if: matrix.os != 'windows-latest'
+#      run: |
+#        pip install hacking==4.1.0
+#        flake8 .
 
     - name: Black
       shell: bash -l {0}
