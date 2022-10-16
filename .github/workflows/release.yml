@@ -75,7 +75,7 @@ jobs:
       id: upload_release_executable_macos_linux
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB1_TOKEN }}
       with:
         upload_url: ${{ steps.get_release_info.outputs.upload_url }}
         asset_path: ./dist/labelme
@@ -87,7 +87,7 @@ jobs:
       id: upload_release_executable_windows
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB1_TOKEN }}
       with:
         upload_url: ${{ steps.get_release_info.outputs.upload_url }}
         asset_path: ./dist/labelme.exe
@@ -107,7 +107,7 @@ jobs:
       id: upload_release_app_macos
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB1_TOKEN }}
       with:
         upload_url: ${{ steps.get_release_info.outputs.upload_url }}
         asset_path: ./dist/Labelme.dmg
