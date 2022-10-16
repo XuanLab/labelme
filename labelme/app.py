@@ -1272,7 +1272,7 @@ class MainWindow(QtWidgets.QMainWindow):
                 filename=filename,
                 shapes=shapes,
                 imagePath=imagePath,
-                imageData=imageData,
+                # imageData=imageData,
                 imageHeight=self.image.height(),
                 imageWidth=self.image.width(),
                 otherData=self.otherData,
