@@ -1268,6 +1268,7 @@ class MainWindow(QtWidgets.QMainWindow):
             imageData = self.imageData if self._config["store_data"] else None
             if osp.dirname(filename) and not osp.exists(osp.dirname(filename)):
                 os.makedirs(osp.dirname(filename))
+                
             lf.save(
                 filename=filename,
                 shapes=shapes,
